@@ -4,11 +4,6 @@
     }
 
     stages {
-        stage('Download Code') {
-            steps {
-                git branch: 'main', url: 'https://github.com/tayefajem1/tayeDevOp_handson.git'
-            }
-        }
         stage('Build') {
             steps {
                 sh 'mvn clean package'
